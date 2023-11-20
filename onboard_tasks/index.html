@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ormcamp Fullstack</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 4px 24px;
+        text-align: center;
+      }
+
+      .tag-article {
+        margin: 10px;
+        width: calc(100% - 72px);
+        border: 1px solid black;
+        padding: 24px;
+        padding-top: 10px;
+        border-radius: 5px;
+      }
+
+      .h-border {
+        border-top: 1px solid black;
+        height: 0px;
+        width: 100%;
+        margin-bottom: 24px;
+      }
+
+      .tag-detail {
+        width: 100%;
+      }
+
+      .tag-detail th {
+        background-color: #d0d0d0;
+      }
+
+      .tag-detail-elem {
+        letter-spacing: -0.5px;
+        font-size: 16px;
+        opacity: 0.7;
+      }
+    </style>
+
+    <!-- **************************************************** -->
+
+    <!-- 주석을 작성하라고 하시는 강력한 압박에 못이겨 주석을 작성함 -->
+    <!-- !DOCTYPE html은 html5라는것을 의미함 -->
+    <!-- HTML은 기본적으로 html태그 내에 head, body 태그로 구성된다 -->
+
+    <!-- **************************************************** -->
+
+    <!-- 1. h(n) 태그 작성 시작 -->
+    <div class="tag-article">
+      <h1>1. h(n) 태그 작성</h1>
+      <div class="h-border"></div>
+      <table class="tag-detail">
+        <tr>
+          <th><h1>H1</h1></th>
+          <td>
+            <h1>Hello world</h1>
+          </td>
+          <td>
+            <p class="tag-detail-elem">
+              h1 태그는 대주제를 나타내며 컨텐츠에 대표주제를 못해도 한번은
+              작성하는것이 검색 엔진 최적화에 도움이 됩니다.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th><h1>H2</h1></th>
+          <td><h2>Hello world</h2></td>
+          <td>
+            <p class="tag-detail-elem"></p>
+          </td>
+        </tr>
+        <tr>
+          <th><h1>H3</h1></th>
+          <td><h3>Hello world</h3></td>
+          <td>
+            <p class="tag-detail-elem"></p>
+          </td>
+        </tr>
+        <tr>
+          <th><h1>H4</h1></th>
+          <td><h4>Hello world</h4></td>
+          <td>
+            <p class="tag-detail-elem"></p>
+          </td>
+        </tr>
+        <tr>
+          <th><h1>H5</h1></th>
+          <td><h5>Hello world</h5></td>
+          <td>
+            <p class="tag-detail-elem"></p>
+          </td>
+        </tr>
+        <tr>
+          <th><h1>H6</h1></th>
+          <td><h6>Hello world</h6></td>
+          <td>
+            <p class="tag-detail-elem"></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 1. h(n) 태그 작성 끝 -->
+
+    <!-- 2. p, br 태그 작성 시작 -->
+    <div class="tag-article">
+      <h1>2. p, br 태그 작성</h1>
+      <div class="h-border"></div>
+      <table class="tag-detail">
+        <tr>
+          <th><h1>p, br</h1></th>
+          <td>
+            <p>Hello world</p>
+          </td>
+          <td>
+            <p class="tag-detail-elem">
+              p 태그는 단락을 나타내며, 단락의 시작과 끝을 나타냅니다.
+              <br />
+              <br />
+              br 태그는 줄바꿈을 나타내며, 단락의 내용을 나누지 않습니다.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- [+] &nbsp; 를 사용하면 공백란을 원하는대로 넣을 수 있음. 일반적인 공백을 넣을시 싸잡아 한칸으로 처리됨 -->
+
+    <!-- 2. p, br 태그 작성 끝 -->
+
+    <!-- **************************************************** -->
+  </body>
+</html>
