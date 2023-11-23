@@ -8,6 +8,7 @@
       body {
         margin: 0px;
         padding: 0px;
+        padding-top: 60px;
       }
 
       th,
@@ -46,6 +47,34 @@
         font-size: 16px;
         opacity: 0.7;
       }
+
+      .header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        background-color: #d0d0d0;
+        padding: 0px 24px;
+      }
+
+      .header-menu {
+        float: right;
+        position: absolute;
+        top: 0px;
+        line-height: 60px;
+        right: 100px;
+      }
+
+      .header-menu a {
+        margin-left: 16px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
     </style>
 
     <!-- **************************************************** -->
@@ -56,8 +85,19 @@
 
     <!-- **************************************************** -->
 
+    <nav class="header">
+      <h1>ORMCAMP FULLSTACK</h1>
+      <div class="header-menu">
+        <a href="#tag01">1. h(n)</a>
+        <a href="#tag02">2. p,br</a>
+        <a href="#tag03">3. a</a>
+        <a href="#tag04">4. img</a>
+        <a href="#tag05">5. table</a>
+      </div>
+    </nav>
+
     <!-- 1. h(n) 태그 작성 시작 -->
-    <div class="tag-article">
+    <div class="tag-article" id="tag01">
       <h1>1. h(n) 태그 작성</h1>
       <div class="h-border"></div>
       <table class="tag-detail">
@@ -114,7 +154,7 @@
     <!-- 1. h(n) 태그 작성 끝 -->
 
     <!-- 2. p, br 태그 작성 시작 -->
-    <div class="tag-article">
+    <div class="tag-article" id="tag02">
       <h1>2. p, br 태그 작성</h1>
       <div class="h-border"></div>
       <table class="tag-detail">
@@ -137,6 +177,112 @@
     <!-- [+] &nbsp; 를 사용하면 공백란을 원하는대로 넣을 수 있음. 일반적인 공백을 넣을시 싸잡아 한칸으로 처리됨 -->
 
     <!-- 2. p, br 태그 작성 끝 -->
+
+    <!-- 3. a 태그 작성 시작 -->
+    <div class="tag-article" id="tag03">
+      <h1>3. a 태그 작성</h1>
+      <div class="h-border"></div>
+      <table class="tag-detail">
+        <tr>
+          <th><h1>a</h1></th>
+          <td>
+            <a href="#" onclick="alert('a 태그 클릭됨!')">Hello world</a><br />
+            <a href="https://www.google.com" target="_blank"
+              >Hello world with new tab</a
+            >
+          </td>
+          <td>
+            <p class="tag-detail-elem">
+              a 태그는 링크를 할당할 수 있는 태그입니다.<br />
+              예를 들면 a href="http://www.naver.com" 은 네이버로 이동하는
+              링크를 할당하는 것입니다.
+              <br /><br />
+              a href="#{id}" 를 이용하면 현재 페이지 내에서 해당 id를 가진
+              태그로 화면을 이동시키도록 할 수 있습니다.
+              <br /><br />
+              이를 통해, a href는 외부의 웹 페이지 뿐 아니라, 현재 페이지
+              내에서도 동적으로 화면을 이동시킬 수 있음을 알 수 있습니다.
+              <br /><br />
+              a 태그에서 target 옵션에 _blank를 주면 새 탭에서 링크를 열 수
+              있습니다.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 3. a 태그 작성 끝 -->
+
+    <!-- 4. img 태그 작성 시작 -->
+    <div class="tag-article" id="tag04">
+      <h1>4. img 태그 작성</h1>
+      <div class="h-border"></div>
+      <table class="tag-detail">
+        <tr>
+          <th><h1>img</h1></th>
+          <td>
+            <a href="https://www.google.com">
+              <img
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                width="200px"
+                alt="구글 로고"
+              />
+            </a>
+          </td>
+          <td>
+            <p class="tag-detail-elem">
+              img 태그는 이미지를 삽입할 수 있는 태그입니다.<br />
+              src="이미지 주소" 를 통해 이미지를 삽입할 수 있습니다.
+              <br /><br />
+              width, height를 통해 이미지의 크기를 조절할 수 있습니다.
+              <br /><br />
+              alt를 통해 이미지가 로드되지 않았을 때, 대체 텍스트를 지정할 수
+              있습니다.
+              <br /><br />
+              좌측에 넣은 이미지처럼, a 태그와 함께 사용하여 이미지를 클릭했을
+              때, 해당 이미지의 링크로 이동하도록 할 수 있습니다.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 4. img 태그 작성 끝 -->
+
+    <!-- 5. table 태그 작성 시작 -->
+    <div class="tag-article" id="tag05">
+      <h1>5. table 태그 작성</h1>
+      <div class="h-border"></div>
+      <table class="tag-detail">
+        <tr>
+          <th><h1>table</h1></th>
+          <td>
+            <table>
+              <tr>
+                <th>th 1</th>
+                <th>th 2</th>
+              </tr>
+              <tr>
+                <td>td 1</td>
+                <td>td 2</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <p class="tag-detail-elem">
+              table 태그는 표를 나타내는 태그입니다.<br />
+              tr 태그는 표의 행을 나타내며, td 태그는 표의 열을 나타냅니다.
+              <br />
+              th 태그는 표의 열의 제목을 나타냅니다.
+
+              <br /><br />
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 5. table 태그 작성 끝 -->
 
     <!-- **************************************************** -->
   </body>
