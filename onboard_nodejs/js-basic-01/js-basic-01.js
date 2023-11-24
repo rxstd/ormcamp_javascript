@@ -219,3 +219,45 @@ console.log("자동 형변환 결과", autoChangeNum09); // 결과 : 3
 
 let autoChangeNum10 = +true; // +true는 true를 숫자형으로 변환한다.
 console.log("자동 형변환 결과", autoChangeNum10); // 결과 : 1
+
+// ## Boolean 형변환 테스트
+// ## Boolean()은 아래와 같은 경우에 false를 리턴한다.
+// ## 1. false
+// ## 2. 0
+// ## 3. ""
+// ## 4. null
+// ## 5. undefined
+// ## 6. NaN
+// ## 그 외의 경우에는 true를 리턴한다.
+let changeBoolean01 = Boolean(false);
+console.log("Boolean 형변환 결과 - false", changeBoolean01); // 결과 : false
+
+let changeBoolean02 = Boolean(0);
+console.log("Boolean 형변환 결과 - 0", changeBoolean02); // 결과 : false
+
+let changeBoolean03 = Boolean("");
+console.log(`Boolean 형변환 결과 - ""`, changeBoolean03); // 결과 : false
+
+let changeBoolean04 = Boolean(null);
+console.log("Boolean 형변환 결과 - null", changeBoolean04); // 결과 : false
+
+let changeBoolean05 = Boolean(undefined);
+console.log("Boolean 형변환 결과 - undefined", changeBoolean05); // 결과 : false
+
+let changeBoolean06 = Boolean(NaN);
+console.log("Boolean 형변환 결과 - NaN", changeBoolean06); // 결과 : false
+
+let changeBoolean07 = Boolean(true);
+console.log("Boolean 형변환 결과 - true", changeBoolean07); // 결과 : true
+
+let changeBoolean08 = Boolean(1);
+console.log("Boolean 형변환 결과 - 1", changeBoolean08); // 결과 : true
+
+let changeBoolean09 = Boolean("hello");
+console.log(`Boolean 형변환 결과 - "hello"`, changeBoolean09); // 결과 : true
+
+let changeBoolean10 = Boolean({});
+console.log("Boolean 형변환 결과 - {}", changeBoolean10); // 결과 : true
+
+let changeBoolean11 = Boolean([]);
+console.log("Boolean 형변환 결과 - []", changeBoolean11); // 결과 : true
