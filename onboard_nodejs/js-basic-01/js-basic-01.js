@@ -391,3 +391,42 @@ if (ifElseNum01 > ifElseNum02) {
   // 크다와 작다가 둘다 아니기 때문에 같다로 판단된다.
   console.log("else문 실행");
 }
+
+// ## 논리 연산자 정리
+// ## 1. && : AND 연산자
+// ## 2. || : OR 연산자
+// ## 3. ! : NOT 연산자
+
+// ## AND 연산자는 아래와 같이 사용한다.
+let andNum01 = 10;
+let andNum02 = 20;
+
+if (andNum01 > 5 && andNum02 > 10) {
+  console.log("AND 연산자 실행");
+}
+
+// ## OR 연산자는 아래와 같이 사용한다.
+let orNum01 = 10;
+let orNum02 = 20;
+
+if (orNum01 > 5 || orNum02 > 10) {
+  console.log("OR 연산자 실행");
+}
+
+// ## NOT 연산자는 아래와 같이 사용한다.
+let notNum01 = 10;
+let notNum02 = 20;
+
+if (!(notNum01 > 5)) {
+  console.log("NOT 연산자 실행");
+}
+
+let guestCount = parseInt(prompt("몇명이서 오셨나요?"));
+let guestSex = prompt("성별을 입력해주세요. 여성이면 female, 남성이면 male");
+let guestAge = parseInt(prompt("나이를 입력해주세요."));
+
+if (guestCount == 1 && guestAge > 19 && guestSex == "Male") {
+  console.log("혼자왔네요 ㅋㅋ 혼자 온 남성손님은 만원을 내세요.");
+} else {
+  console.log("나머지는 영화 그냥 쏜다쏜다쏜다!! 꽁짜로보세요.");
+}
