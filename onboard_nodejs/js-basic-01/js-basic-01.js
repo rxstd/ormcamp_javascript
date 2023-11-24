@@ -346,3 +346,48 @@ console.log("같지 않다", compareVar01 !== compareVar02); // 결과 : true
 // ## 데이터는 같으나 데이터형이 달라 ==과 ===이 정반대의 결과를 리턴하는것을 볼 수 있다.
 // ## 이는 == 연산자는 자동 형변환이 되기 때문이다.
 // ## !=와 !==도 마찬가지이다.
+
+// ## if문에 대한 이해
+// ## if문은 아래와 같이 사용한다.
+let ifNum01 = 10;
+let ifNum02 = 20;
+
+if (ifNum01 < ifNum02) {
+  console.log("if문 실행");
+}
+
+// ## if 문 내의 값은 자동으로 boolean 형변환이 된다.
+// ## 따라서 위에 정리한 데이터형의 boolean 변환 내용을 잘 숙지해야 if문을 수월하게 사용할 수 있다.
+
+// ## if ~ else문에 대한 이해
+// ## if ~ else문은 아래와 같이 사용한다.
+let ifElseNum01 = 10;
+let ifElseNum02 = 20;
+
+if (ifElseNum01 > ifElseNum02) {
+  console.log("if문 실행");
+} else {
+  console.log("else문 실행");
+}
+
+// ## 이 코드를 if문으로만 작성하면 아래와 같다.
+if (ifElseNum01 > ifElseNum02) {
+  console.log("if문 실행");
+}
+
+if (ifElseNum01 <= ifElseNum02) {
+  console.log("else문 실행");
+}
+
+// ## if ~ else if ~ else문에 대한 이해
+// ## if ~ else if ~ else문은 아래와 같이 사용한다.
+if (ifElseNum01 > ifElseNum02) {
+  // 크다
+  console.log("if문 실행");
+} else if (ifElseNum01 < ifElseNum02) {
+  // 작다
+  console.log("else if문 실행");
+} else {
+  // 크다와 작다가 둘다 아니기 때문에 같다로 판단된다.
+  console.log("else문 실행");
+}
