@@ -24,7 +24,7 @@ let string = "Hello"; // ## 문자열
 let isTrue = true; // ## 참
 
 // ## array
-let fruits = ["NodeJS", "Python", "PHP"]; // ## 배열
+let codeLangs = ["NodeJS", "Python", "PHP"]; // ## 배열
 
 // ## object
 let user = {
@@ -45,7 +45,7 @@ console.log("float의 데이터형은", typeof float);
 console.log("negative의 데이터형은", typeof negative);
 console.log("string의 데이터형은", typeof string);
 console.log("isTrue의 데이터형은", typeof isTrue);
-console.log("fruits의 데이터형은", typeof fruits);
+console.log("codeLangs의 데이터형은", typeof codeLangs);
 console.log("user의 데이터형은", typeof user);
 console.log("sum의 데이터형은", typeof sum);
 
