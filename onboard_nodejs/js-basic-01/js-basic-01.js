@@ -307,3 +307,22 @@ let plusPlusNumResult01 = ++plusPlusNum01;
 console.log("후행 ++ 연산자 결과", plusPlusNumResult00); // 결과 : 10
 console.log("선행 ++ 연산자 결과", plusPlusNumResult01); // 결과 : 12
 // ## 예상치 못하게 버그가 많이 발생하는 부분이므로 꼭 숙지하고 있어야 한다.
+
+// ## 비교 연산자 정리
+// ## 1. < : 작다
+// ## 2. > : 크다
+// ## 3. <= : 작거나 같다
+// ## 4. >= : 크거나 같다
+// ## 5. == : 같다
+// ## 6. != : 같지 않다
+
+// ## 비교 연산자는 아래와 같이 사용한다.
+let compareNum01 = 10;
+let compareNum02 = 20;
+
+console.log("작다", compareNum01 < compareNum02); // 결과 : true
+console.log("크다", compareNum01 > compareNum02); // 결과 : false
+console.log("작거나 같다", compareNum01 <= compareNum02); // 결과 : true
+console.log("크거나 같다", compareNum01 >= compareNum02); // 결과 : false
+console.log("같다", compareNum01 == compareNum02); // 결과 : false
+console.log("같지 않다", compareNum01 != compareNum02); // 결과 : true
