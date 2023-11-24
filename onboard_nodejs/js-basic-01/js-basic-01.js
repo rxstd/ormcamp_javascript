@@ -262,3 +262,48 @@ console.log("Boolean 형변환 결과 - {}", changeBoolean10); // 결과 : true
 
 let changeBoolean11 = Boolean([]);
 console.log("Boolean 형변환 결과 - []", changeBoolean11); // 결과 : true
+
+// ## +=, -=, *=, /=, %= 연산자
+// ## += 연산자는 아래와 같이 사용한다.
+let plusEqualNum = 10;
+plusEqualNum += 20;
+console.log("+= 연산자 결과", plusEqualNum); // 결과 : 30
+
+// ## -= 연산자는 아래와 같이 사용한다.
+let minusEqualNum = 10;
+minusEqualNum -= 20;
+console.log("-= 연산자 결과", minusEqualNum); // 결과 : -10
+
+// ## *= 연산자는 아래와 같이 사용한다.
+let multiplyEqualNum = 10;
+multiplyEqualNum *= 20;
+console.log("*= 연산자 결과", multiplyEqualNum); // 결과 : 200
+
+// ## /= 연산자는 아래와 같이 사용한다.
+let divideEqualNum = 10;
+divideEqualNum /= 20;
+console.log("/= 연산자 결과", divideEqualNum); // 결과 : 0.5
+
+// ## %= 연산자는 아래와 같이 사용한다.
+let remainderEqualNum = 10;
+remainderEqualNum %= 20;
+console.log("%= 연산자 결과", remainderEqualNum); // 결과 : 10
+
+// ## == 연산자
+// ## == 연산자는 두 값이 같으면 true, 다르면 false를 리턴한다.
+// ## == 연산자는 아래와 같이 사용한다.
+let equalNum01 = 10;
+let equalNum02 = "10"; // String 데이터형이지만 == 연산자는 자동 형변환을 하기 때문에 true를 리턴한다.
+
+console.log("== 연산자 결과", equalNum01 == equalNum02); // 결과 : true
+
+// ## ++ 연산자에 대한 추가 내용
+// ## 일반적인 ++ 연산자는 변수의 값을 1 증가시킨다.
+// ## 하지만 ++ 연산자를 변수 앞에 붙이면 먼저 증가시키고 값을 리턴한다.
+let plusPlusNum01 = 10;
+let plusPlusNumResult00 = plusPlusNum01++;
+let plusPlusNumResult01 = ++plusPlusNum01;
+
+console.log("후행 ++ 연산자 결과", plusPlusNumResult00); // 결과 : 10
+console.log("선행 ++ 연산자 결과", plusPlusNumResult01); // 결과 : 12
+// ## 예상치 못하게 버그가 많이 발생하는 부분이므로 꼭 숙지하고 있어야 한다.
