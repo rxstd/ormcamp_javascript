@@ -160,3 +160,62 @@ I'm ${myAge} years old.
 I'm studying JavaScript.`;
 
 console.log("여러줄의 문자열 표현", myInfo02);
+
+// 문자열과 숫자를 더하면 전체적으로 문자열로 변환된다.
+let stringNum = "10" + 20;
+console.log("문자열과 숫자를 더한 결과", stringNum); // 결과 : 1020
+
+let numString = 10 + "20";
+console.log("숫자와 문자열을 더한 결과", numString); // 결과 : 1020
+
+// ## prompt()를 사용한 사용자 입력
+// ## prompt()는 사용자로부터 입력을 받는 함수이다.
+// ## prompt()는 웹브라우저에서만 사용할 수 있다. NodeJS에서는 사용할 수 없다.
+// ## 리턴 데이터형은 string이다.
+let userName = prompt("이름을 입력해주세요.");
+console.log("사용자 입력", userName);
+
+// ## confirm()을 사용한 사용자 확인
+// ## confirm()은 사용자로부터 확인을 받는 함수이다. ~~ 하시겠습니까? [확인] [취소] 버튼이 있는 창이 뜬다.
+// ## confirm()은 웹브라우저에서만 사용할 수 있다. NodeJS에서는 사용할 수 없다.
+// ## 리턴 데이터형은 boolean이다. [확인] 버튼을 누르면 true, [취소] 버튼을 누르면 false를 리턴한다.
+let isDelete = confirm("정말 삭제하시겠습니까?");
+console.log("사용자 확인", isDelete);
+
+// ## JavaScript 자동 형변환
+// ## 자바스크립트는 데이터형을 선언하지 않는다.
+// ## 변수에 데이터를 할당할 때 데이터형이 자동으로 변환된다.
+// ## 이를 자동 형변환이라고 한다.
+let autoChangeNum = 10 + "20";
+console.log("자동 형변환 결과", autoChangeNum); // 결과 : 1020
+
+// ## 자동 형변환은 아래와 같은 경우에도 발생한다.
+let autoChangeNum01 = 10 + 20 + "30"; // Number + Number + String
+console.log("자동 형변환 결과", autoChangeNum01); // 결과 : 3030
+
+let autoChangeNum02 = 10 + "20" + 30; // Number + String + Number
+console.log("자동 형변환 결과", autoChangeNum02); // 결과 : 102030
+
+let autoChangeNum03 = 10 + true; // Number + Boolean (true는 1로 자동 형변환된다.)
+console.log("자동 형변환 결과", autoChangeNum03); // 결과 : 11
+
+let autoChangeNum04 = 10 + false; // Number + Boolean (false는 0으로 자동 형변환된다.)
+console.log("자동 형변환 결과", autoChangeNum04); // 결과 : 10
+
+let autoChangeNum05 = 10 + null; // Number + null
+console.log("자동 형변환 결과", autoChangeNum05); // 결과 : 10
+
+let autoChangeNum06 = 10 + undefined; // Number + undefined
+console.log("자동 형변환 결과", autoChangeNum06); // 결과 : NaN
+
+let autoChangeNum07 = 10 + NaN; // Number + NaN
+console.log("자동 형변환 결과", autoChangeNum07); // 결과 : NaN
+
+let autoChangeNum08 = "6" / "2"; // String / String
+console.log("자동 형변환 결과", autoChangeNum08); // 결과 : 3
+
+let autoChangeNum09 = 3 + ""; // Number + String
+console.log("자동 형변환 결과", autoChangeNum09); // 결과 : 3
+
+let autoChangeNum10 = +true; // +true는 true를 숫자형으로 변환한다.
+console.log("자동 형변환 결과", autoChangeNum10); // 결과 : 1
