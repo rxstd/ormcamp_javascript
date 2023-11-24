@@ -326,3 +326,23 @@ console.log("작거나 같다", compareNum01 <= compareNum02); // 결과 : true
 console.log("크거나 같다", compareNum01 >= compareNum02); // 결과 : false
 console.log("같다", compareNum01 == compareNum02); // 결과 : false
 console.log("같지 않다", compareNum01 != compareNum02); // 결과 : true
+
+// ## ==와 ===의 차이
+// ## == 연산자는 두 값이 같으면 true, 다르면 false를 리턴한다. (자동 형변환 O)
+// ## != 연산자는 두 값이 다르면 true, 같으면 false를 리턴한다. (자동 형변환 O)
+
+let compareVar01 = "10";
+let compareVar02 = 10;
+
+console.log("같다", compareVar01 == compareVar02); // 결과 : true
+console.log("같지 않다", compareVar01 != compareVar02); // 결과 : false
+
+// ## === 연산자는 두 값이 같으면 true, 다르면 false를 리턴한다. (자동 형변환 X)
+// ## !== 연산자는 두 값이 다르면 true, 같으면 false를 리턴한다. (자동 형변환 X)
+
+console.log("같다", compareVar01 === compareVar02); // 결과 : false
+console.log("같지 않다", compareVar01 !== compareVar02); // 결과 : true
+
+// ## 데이터는 같으나 데이터형이 달라 ==과 ===이 정반대의 결과를 리턴하는것을 볼 수 있다.
+// ## 이는 == 연산자는 자동 형변환이 되기 때문이다.
+// ## !=와 !==도 마찬가지이다.
