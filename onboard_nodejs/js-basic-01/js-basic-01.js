@@ -1,3 +1,5 @@
+// ## JavaScript 기본 데이터 형식
+
 // ## 변수에는 숫자와 문자. $, _만 사용할 수 있다.
 // ## 변수명은 숫자로 시작할 수 없다.
 // ## 변수명은 대소문자를 구분한다.
@@ -137,3 +139,24 @@ console.log("증감 연산 결과", increaseNum);
 
 let decreaseNum = num2--;
 console.log("증감 연산 결과", decreaseNum);
+
+// ## backtick(`)을 사용한 문자열 표현
+// ## ES6에서 도입된 backtick(`)은 문자열 표현을 위한 새로운 기능이다.
+// ## 기존에는 문자열을 표현하기 위해 작은따옴표(')와 큰따옴표(")를 사용했다.
+// ## 이에 문자열 내에 변수를 넣으려면 아래 코드와 같이 그때그때 불편하게 이어붙여야 했다.
+let myName = "Evans";
+let myAge = 25;
+let myInfo00 = "My name is " + myName + ". I'm " + myAge + " years old.";
+
+// ## backtick(`)을 사용하면 아래와 같이 편리하게 문자열을 표현할 수 있다.
+let myInfo01 = `My name is ${myName}. I'm ${myAge} years old.`;
+
+console.log("기존 문자열 표현", myInfo00);
+console.log("backtick을 사용한 ES6 문자열 표현", myInfo01);
+
+// ## backtick(`)을 사용하면 아래와 같이 여러줄의 문자열을 표현할 수 있다.
+let myInfo02 = `My name is ${myName}.
+I'm ${myAge} years old.
+I'm studying JavaScript.`;
+
+console.log("여러줄의 문자열 표현", myInfo02);
