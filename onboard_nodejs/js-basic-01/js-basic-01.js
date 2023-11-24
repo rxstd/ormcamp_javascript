@@ -17,6 +17,7 @@
 // ## 4. array : 배열
 // ## 5. object : 객체
 // ## 6. function : 함수
+// ## 7. undefined : 정의되지 않은 데이터형
 
 // ## number
 let integer = 10; // ## 정수
@@ -55,6 +56,9 @@ console.log("isTrue의 데이터형은", typeof isTrue);
 console.log("codeLangs의 데이터형은", typeof codeLangs);
 console.log("user의 데이터형은", typeof user);
 console.log("sum의 데이터형은", typeof sum);
+
+// ## typeof null의 데이터형은 object이다.
+// ## 이는 자바스크립트의 초기 설계상 오류로 인해 발생한 버그이다.
 
 // ## 데이터형 변환
 // ## 1. String() : 문자형으로 변환
@@ -100,3 +104,36 @@ console.log(
   "testVariableParseFloat의 데이터형은",
   typeof testVariableParseFloat
 );
+
+// ## number 데이터형의 연산
+let num1 = 10;
+let num2 = 20;
+let num3 = 30;
+let num4 = 40;
+
+// ## 더하기 연산. + 연산자를 사용한다.
+let sumNum = num1 + num2;
+console.log("더하기 연산 결과", sumNum);
+
+// ## 빼기 연산. - 연산자를 사용한다.
+let minusNum = num3 - num4;
+console.log("빼기 연산 결과", minusNum);
+
+// ## 곱하기 연산. * 연산자를 사용한다.
+let multiplyNum = num1 * num2;
+console.log("곱하기 연산 결과", multiplyNum);
+
+// ## 나누기 연산. / 연산자를 사용한다.
+let divideNum = num3 / num4;
+console.log("나누기 연산 결과", divideNum);
+
+// ## 나머지 연산. % 연산자를 사용한다.
+let remainderNum = num1 % num2;
+console.log("나머지 연산 결과", remainderNum);
+
+// ## 증감 연산. ++, -- 연산자를 사용한다. 이는 1씩 증가하거나 감소하는 연산자이다.
+let increaseNum = num1++; // ++연산자는 대표적으로 for문에서 사용된다. for (let i = 0; i < 10; i++) { ~~ }
+console.log("증감 연산 결과", increaseNum);
+
+let decreaseNum = num2--;
+console.log("증감 연산 결과", decreaseNum);
