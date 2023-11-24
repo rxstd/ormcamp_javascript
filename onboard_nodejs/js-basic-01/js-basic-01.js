@@ -172,6 +172,7 @@ console.log("숫자와 문자열을 더한 결과", numString); // 결과 : 1020
 // ## prompt()는 사용자로부터 입력을 받는 함수이다.
 // ## prompt()는 웹브라우저에서만 사용할 수 있다. NodeJS에서는 사용할 수 없다.
 // ## 리턴 데이터형은 string이다.
+// ## 그냥 취소 버튼을 누르면 null을 리턴한다.
 let userName = prompt("이름을 입력해주세요.");
 console.log("사용자 입력", userName);
 
@@ -223,8 +224,8 @@ console.log("자동 형변환 결과", autoChangeNum10); // 결과 : 1
 // ## Boolean 형변환 테스트
 // ## Boolean()은 아래와 같은 경우에 false를 리턴한다.
 // ## 1. false
-// ## 2. 0
-// ## 3. ""
+// ## 2. 0 (숫자 0. 문자열 "0" true를 리턴한다.)
+// ## 3. "" (빈 문자열. 문자열 "false"는 true를 리턴한다. 띄어쓰기만 들어가도 true를 리턴한다.)
 // ## 4. null
 // ## 5. undefined
 // ## 6. NaN
