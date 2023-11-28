@@ -46,8 +46,21 @@
  - git --version => git version 2.39.2 (Apple Git-143)
 
 ## Git을 이용한 개발 시나리오
- 1. 출근 후 repository에 있는 내역을 먼저 가져와 (git pull) 내 로컬 환경에 반영한다.
+ 1. 출근 후 repository에 있는 내역(이전 근무자가 작업한 내용)을 먼저 가져와 (git pull) 내 로컬 환경에 반영한다.
  2. 다른 사람이 작업해둔 변경된 내용을 git commit 내역을 통해 확인한다.
  3. 개발 업무를 진행한다.
  4. 퇴근 전 혹은 한 Subject가 종결되었을때, git commit을 통해서 내가 작업한 코드를 문제가 없는지 확인한 뒤 repository에 git push한다.
  5. 다음 담당자가 와서 1번부터 반복된다. 이를 통해 여러명이 하나의 코드로 작업하더라도 이어서 협업이 가능한것이다.
+
+## "서버 기반 VCS" vs "분산형 VCS"
+ - Centralized versioin control system == 중앙화된 버전관리 시스템
+ - Distributed version control system == 분산화된 버전관리 시스템
+
+## VSCode 설치 및 활용
+ - VSCode == Visual Studio Code의 약자
+ - VSCode는 IDE의 한 종류로, Microsoft에서 개발됨
+ - 타 에디터나 IDE에 비하여 가볍게 움직이고 확장성이 좋아 범용적으로 사용됨
+
+## 프로그래밍 언어의 종류
+ - 기계어 (Assembly) - 기계나 컴퓨터가 이해하기 위한 Low-Level 언어
+ - 프로그래밍 언어 - 사람이 읽고 이해하기 편한 High-level 언어
