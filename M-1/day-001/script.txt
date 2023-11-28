@@ -30,13 +30,12 @@
     :: CVS는 전통적으로 많이 사용되어 온 클라이언트 서버 기반의 무료 오픈소스 VCS임
     :: SVN은 CVS의 개선판임
     :: SVN은 클라이언트-서버 저장소 모델을 기반으로 한 VCS 시스템임
-    :: SVN은 TortoiseSVN과 같은 사용이 용이한 GUI 툴이 제공됨
+    :: SVN은 TortoiseSVN과 같은 사용이 용이한 GUI 도구가 제공됨
     :: SVN은 Git 이전에 가장 보편적으로 사용되던 VCS 시스템임
 
  - TFS(Team Foundation Server) & VSTS(Visual Studio Team Service)
-    :: TFS는 Microsoft에서 제공하던 사용 ALM(Application Lifecycle Management) 툴임
-    :: TFS는 ALM & VCS 기능을 모두 제공함
-    :: VSTS는 분산 클라이언트 - 서버 저장소 모델을 기반으로 한 버전제어 툴임
+    :: TFS는 Microsoft에서 제공하던 사용 ALM(Application Lifecycle Management - 어플리케이션 생명주기 관리) 도구임
+    :: TFS는 ALM와 VCS의 기능을 모두 제공함
+    :: VSTS는 분산 클라이언트 - 서버 저장소 모델을 기반으로 한 버전제어 도구임
     :: VSTS는 5인 이하로 사용할 경우 무료로 제공됨
 
-#### 점심시간 ####
